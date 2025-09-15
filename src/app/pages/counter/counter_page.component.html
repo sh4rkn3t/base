@@ -1,7 +1,10 @@
 <h2>COUNTER COMPONENT</h2>
 <hr/>
 <h3>Counter: {{ counter }} </h3>
-<h3>Counter signal: {{ counterSignal() }} </h3>
 <button (click)="increaseBy(1)">+1</button>
 <button (click)="decreaseBy(-1)">-1</button>
 <button (click)="resetCounter(10)">reset</button>
+
+<h3>Counter signal: {{ counterSignal() }} </h3>
+<button (click)="increaseSignalSet(1)">+1 signal Set</button>
+<button (click)="increaseSignalUpdate(1)">+1 signal Update</button>

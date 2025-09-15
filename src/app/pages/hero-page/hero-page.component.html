@@ -1,0 +1,29 @@
+<h1>{{ name() }}</h1>
+
+<table>
+    <tr>
+      <td>Nombre:</td>
+      <td>{{ name() }}</td>
+    </tr>
+    <tr>
+      <td>Edad:</td>
+      <td>{{ age() }}</td>
+    </tr>
+    <tr>
+      <td>Método:</td>
+      <td>{{ getHeroDescription('Ironman',45) }}</td>
+    </tr>
+    <tr>
+      <td>Capitalizado:</td>
+      <td>{{ name() | upperCase }} </td>
+    </tr>
+</table>
+<br>
+<button (click)="changeHero()" class="btn btn-primary mx-2">
+    Cambiar nombre
+</button>
+
+<button (click)="changeAge()" class="btn btn-primary">Cambiar edad</button>
+
+<button (click)="resetForm()" class="btn btn-primary mx-2">Reset</button>
+
